@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "Crimson": {
+            "applicationId": "QtZp32q9GfvXr9dISg1bHLiRCPUAQupJuvVLUR4A", 
+            "masterKey": "vtD19qgTNrV54rJLXJI6cPdFuHMoQUL7Gg7g9R2h"
+        }, 
+        "_default": {
+            "link": "Crimson"
+        }
+    }
+}

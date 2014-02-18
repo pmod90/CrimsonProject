@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/locationGold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/locationLumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+    <TextView
+        android:id="@+id/locationStone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+
+    <NumberPicker
+        android:id="@+id/altitudePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     
+         />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ambushClicked"
+        android:text="@string/ambush" />
+
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="forageClicked"
+        android:text="@string/forage" />
+    
+    
+     <TextView
+        android:id="@+id/otherPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+
+     <Button
+         android:id="@+id/checkButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="checkArtifactsClicked"
+         android:text="@string/checkArtifacts" />
+
+</LinearLayout>

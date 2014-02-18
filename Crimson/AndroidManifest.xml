@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crimson"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:debuggable="true"
+        >
+       <activity
+
+            android:name="com.example.crimson.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+         <activity android:name =".SignUpActivity"></activity>
+         <activity android:name =".Home"></activity>
+         <activity android:name ="EditProfile"></activity>
+         <activity android:name =".PostCheckIn"></activity>
+         <activity android:name =".Ambush"></activity>
+         <activity android:name =".CheckArtifacts"></activity>
+         
+         <service android:name =".BattleChallengeService"></service>
+         <service android:name =".BattleRecieverService"></service>
+         <service android:name =".AIAttackService"></service>
+         <activity android:name=".AIDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog"></activity>
+         
+          <activity android:name=".BattleDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog"></activity>
+
+         <service android:name="com.parse.PushService" />
+		 <receiver android:name="com.parse.ParseBroadcastReceiver">
+  		 	<intent-filter>
+    	 		<action android:name="android.intent.action.BOOT_COMPLETED" />
+    	 		<action android:name="android.intent.action.USER_PRESENT" />
+  			</intent-filter>
+		</receiver>
+		<service android:name=".ForageService" />
+    
+    </application>
+
+</manifest>
